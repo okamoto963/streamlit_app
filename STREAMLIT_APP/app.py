@@ -5,8 +5,8 @@ import plotly as plt
 import numpy as np
 
 st.title('test')
-pd.read_csv('STREAMLIT_APP\ma030000.csv')
-pd.read_csv('STREAMLIT_APP\表6-2.csv')
+pd.read_csv('ma030000.csv')
+pd.read_csv('表6-2.csv')
 
 df.head()
 df.shape
