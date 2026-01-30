@@ -4,13 +4,9 @@ from pandas import DataFrame as df
 import plotly as plt
 import numpy as np
 
-st.title("CSV 読み込みチェック")
+st.title("都道府県別の人口と交通事故件数の関係")
 
-try:
-    df = pd.read_csv("ma030000.csv", encoding="shift_jis")
-    st.success("CSV を正常に読み込めました")
-    st.write(df.head())
-    st.write(df.shape)
-except Exception as e:
-    st.error("CSV の読み込みに失敗しました")
-    st.write(str(e))
+df1 = pd.read_csv("令和6年人口動態統計.csv", encoding="shift_jis")
+df2 = pd.read_csv("表6-2.csv",encoding="shift_jis")
+
+with st.sidebar:
