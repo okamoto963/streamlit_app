@@ -1,3 +1,8 @@
+import os
+print("FILES IN CLOUD:", os.listdir("."))
+
+
+
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
