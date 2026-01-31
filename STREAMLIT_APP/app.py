@@ -9,7 +9,7 @@ matplotlib.rcParams['axes.unicode_minus'] = False
 st.set_page_config(layout="wide")
 st.title("CPI可視化app")
 
-df = pd.read_csv("CPI.csv", encoding="utf-8")
+df = pd.read_csv("/mount/src/streamlit_app/STREAMLIT_APP/CPI.csv", encoding="utf-8")
 
 
 
